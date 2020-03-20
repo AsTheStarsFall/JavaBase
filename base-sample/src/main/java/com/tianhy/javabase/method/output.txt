@@ -1,0 +1,230 @@
+Classfile /F:/StudyWorkSpaces/JavaBase/src/main/java/com/tianhy/javabase/method/ParamPassing.class
+  Last modified 2020-2-20; size 1467 bytes
+  MD5 checksum eccf9002f0e45ecbf329a54cd6bb6833
+  Compiled from "ParamPassing.java"
+public class com.tianhy.javabase.method.ParamPassing
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #24.#47        // java/lang/Object."<init>":()V
+   #2 = Fieldref           #23.#48        // com/tianhy/javabase/method/ParamPassing.intSatic:I
+   #3 = Methodref          #23.#49        // com/tianhy/javabase/method/ParamPassing.method:(I)V
+   #4 = Fieldref           #23.#50        // com/tianhy/javabase/method/ParamPassing.stringStatic:Ljava/lang/String;
+   #5 = Methodref          #23.#51        // com/tianhy/javabase/method/ParamPassing.method:(Ljava/lang/String;)V
+   #6 = Fieldref           #23.#52        // com/tianhy/javabase/method/ParamPassing.stringBuilder:Ljava/lang/StringBuilder;
+   #7 = Methodref          #23.#53        // com/tianhy/javabase/method/ParamPassing.method:(Ljava/lang/StringBuilder;Ljava/lang/StringBuilder;)V
+   #8 = Fieldref           #54.#55        // java/lang/System.out:Ljava/io/PrintStream;
+   #9 = Methodref          #56.#57        // java/io/PrintStream.println:(I)V
+  #10 = Methodref          #23.#58        // com/tianhy/javabase/method/ParamPassing.method:()V
+  #11 = Methodref          #56.#59        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #12 = Methodref          #56.#60        // java/io/PrintStream.println:(Ljava/lang/Object;)V
+  #13 = String             #61            // new String
+  #14 = String             #62            // .method.first-
+  #15 = Methodref          #17.#63        // java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #16 = String             #64            // method.second-
+  #17 = Class              #65            // java/lang/StringBuilder
+  #18 = String             #66            // new StringBuilder
+  #19 = Methodref          #17.#67        // java/lang/StringBuilder."<init>":(Ljava/lang/String;)V
+  #20 = String             #68            // new method's append
+  #21 = String             #69            // old String
+  #22 = String             #70            // old StringBuilder
+  #23 = Class              #71            // com/tianhy/javabase/method/ParamPassing
+  #24 = Class              #72            // java/lang/Object
+  #25 = Utf8               intSatic
+  #26 = Utf8               I
+  #27 = Utf8               stringStatic
+  #28 = Utf8               Ljava/lang/String;
+  #29 = Utf8               stringBuilder
+  #30 = Utf8               Ljava/lang/StringBuilder;
+  #31 = Utf8               <init>
+  #32 = Utf8               ()V
+  #33 = Utf8               Code
+  #34 = Utf8               LineNumberTable
+  #35 = Utf8               main
+  #36 = Utf8               ([Ljava/lang/String;)V
+  #37 = Utf8               StackMapTable
+  #38 = Utf8               Exceptions
+  #39 = Class              #73            // java/lang/InterruptedException
+  #40 = Utf8               method
+  #41 = Utf8               (I)V
+  #42 = Utf8               (Ljava/lang/String;)V
+  #43 = Utf8               (Ljava/lang/StringBuilder;Ljava/lang/StringBuilder;)V
+  #44 = Utf8               <clinit>
+  #45 = Utf8               SourceFile
+  #46 = Utf8               ParamPassing.java
+  #47 = NameAndType        #31:#32        // "<init>":()V
+  #48 = NameAndType        #25:#26        // intSatic:I
+  #49 = NameAndType        #40:#41        // method:(I)V
+  #50 = NameAndType        #27:#28        // stringStatic:Ljava/lang/String;
+  #51 = NameAndType        #40:#42        // method:(Ljava/lang/String;)V
+  #52 = NameAndType        #29:#30        // stringBuilder:Ljava/lang/StringBuilder;
+  #53 = NameAndType        #40:#43        // method:(Ljava/lang/StringBuilder;Ljava/lang/StringBuilder;)V
+  #54 = Class              #74            // java/lang/System
+  #55 = NameAndType        #75:#76        // out:Ljava/io/PrintStream;
+  #56 = Class              #77            // java/io/PrintStream
+  #57 = NameAndType        #78:#41        // println:(I)V
+  #58 = NameAndType        #40:#32        // method:()V
+  #59 = NameAndType        #78:#42        // println:(Ljava/lang/String;)V
+  #60 = NameAndType        #78:#79        // println:(Ljava/lang/Object;)V
+  #61 = Utf8               new String
+  #62 = Utf8               .method.first-
+  #63 = NameAndType        #80:#81        // append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #64 = Utf8               method.second-
+  #65 = Utf8               java/lang/StringBuilder
+  #66 = Utf8               new StringBuilder
+  #67 = NameAndType        #31:#42        // "<init>":(Ljava/lang/String;)V
+  #68 = Utf8               new method's append
+  #69 = Utf8               old String
+  #70 = Utf8               old StringBuilder
+  #71 = Utf8               com/tianhy/javabase/method/ParamPassing
+  #72 = Utf8               java/lang/Object
+  #73 = Utf8               java/lang/InterruptedException
+  #74 = Utf8               java/lang/System
+  #75 = Utf8               out
+  #76 = Utf8               Ljava/io/PrintStream;
+  #77 = Utf8               java/io/PrintStream
+  #78 = Utf8               println
+  #79 = Utf8               (Ljava/lang/Object;)V
+  #80 = Utf8               append
+  #81 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuilder;
+{
+  public com.tianhy.javabase.method.ParamPassing();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 8: 0
+
+  public static void main(java.lang.String[]) throws java.lang.InterruptedException;
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #2                  // Field intSatic:I
+         3: invokestatic  #3                  // Method method:(I)V
+         6: getstatic     #4                  // Field stringStatic:Ljava/lang/String;
+         9: invokestatic  #5                  // Method method:(Ljava/lang/String;)V
+        12: getstatic     #6                  // Field stringBuilder:Ljava/lang/StringBuilder;
+        15: getstatic     #6                  // Field stringBuilder:Ljava/lang/StringBuilder;
+        18: invokestatic  #7                  // Method method:(Ljava/lang/StringBuilder;Ljava/lang/StringBuilder;)V
+        21: getstatic     #8                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        24: getstatic     #2                  // Field intSatic:I
+        27: invokevirtual #9                  // Method java/io/PrintStream.println:(I)V
+        30: invokestatic  #10                 // Method method:()V
+        33: getstatic     #8                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        36: getstatic     #2                  // Field intSatic:I
+        39: invokevirtual #9                  // Method java/io/PrintStream.println:(I)V
+        42: getstatic     #8                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        45: getstatic     #4                  // Field stringStatic:Ljava/lang/String;
+        48: invokevirtual #11                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+        51: getstatic     #8                  // Field java/lang/System.out:Ljava/io/PrintStream;
+        54: getstatic     #6                  // Field stringBuilder:Ljava/lang/StringBuilder;
+        57: invokevirtual #12                 // Method java/io/PrintStream.println:(Ljava/lang/Object;)V
+        60: goto          60
+      LineNumberTable:
+        line 18: 0
+        line 19: 6
+        line 20: 12
+        line 22: 21
+        line 23: 30
+        line 24: 33
+        line 25: 42
+        line 26: 51
+        line 27: 60
+      StackMapTable: number_of_entries = 1
+        frame_type = 60 /* same */
+    Exceptions:
+      throws java.lang.InterruptedException
+
+  public static void method(int);
+    descriptor: (I)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: sipush        777
+         3: istore_0
+         4: return
+      LineNumberTable:
+        line 34: 0
+        line 35: 4
+
+  public static void method();
+    descriptor: ()V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=0, args_size=0
+         0: sipush        888
+         3: putstatic     #2                  // Field intSatic:I
+         6: return
+      LineNumberTable:
+        line 39: 0
+        line 40: 6
+
+  public static void method(java.lang.String);
+    descriptor: (Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: ldc           #13                 // String new String
+         2: astore_0
+         3: return
+      LineNumberTable:
+        line 45: 0
+        line 46: 3
+
+  public static void method(java.lang.StringBuilder, java.lang.StringBuilder);
+    descriptor: (Ljava/lang/StringBuilder;Ljava/lang/StringBuilder;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=3, locals=2, args_size=2
+         0: aload_0
+         1: ldc           #14                 // String .method.first-
+         3: invokevirtual #15                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+         6: pop
+         7: aload_1
+         8: ldc           #16                 // String method.second-
+        10: invokevirtual #15                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        13: pop
+        14: new           #17                 // class java/lang/StringBuilder
+        17: dup
+        18: ldc           #18                 // String new StringBuilder
+        20: invokespecial #19                 // Method java/lang/StringBuilder."<init>":(Ljava/lang/String;)V
+        23: astore_0   //astore命令对局部变量表的第一个位置的引用变量值进行覆盖
+        24: aload_0
+        25: ldc           #20                 // String new method's append
+        27: invokevirtual #15                 // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+        30: pop
+        31: return
+      LineNumberTable:
+        line 51: 0
+        line 52: 7
+        line 54: 14
+        line 55: 24
+        line 56: 31
+
+  static {};
+    descriptor: ()V
+    flags: ACC_STATIC
+    Code:
+      stack=3, locals=0, args_size=0
+         0: bipush        111
+         2: putstatic     #2                  // Field intSatic:I
+         5: ldc           #21                 // String old String
+         7: putstatic     #4                  // Field stringStatic:Ljava/lang/String;
+        10: new           #17                 // class java/lang/StringBuilder
+        13: dup
+        14: ldc           #22                 // String old StringBuilder
+        16: invokespecial #19                 // Method java/lang/StringBuilder."<init>":(Ljava/lang/String;)V
+        19: putstatic     #6                  // Field stringBuilder:Ljava/lang/StringBuilder;
+        22: return
+      LineNumberTable:
+        line 10: 0
+        line 12: 5
+        line 14: 10
+}
+SourceFile: "ParamPassing.java"
